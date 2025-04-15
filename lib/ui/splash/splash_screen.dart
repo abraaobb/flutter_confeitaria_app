@@ -19,13 +19,21 @@ class SplashScreen extends StatelessWidget {
                 spacing: 32,
                 children: [
                   Image.asset('assets/logo.png', width: 192),
-                  Text(
-                    'Um parceiro inovador para sua',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                  Text(
-                    'melhor experiência culinária',
-                    style: TextStyle(color: AppColors.mainColor),
+                  Column(
+                    children: [
+                      Text(
+                        'Um parceiro inovador para sua',
+                        style: TextStyle(color: Colors.white, fontSize: 22.0),
+                      ),
+                      Text(
+                        'melhor experiência culinária!',
+                        style: TextStyle(
+                          color: AppColors.mainColor,
+                          fontSize: 22.0,
+                          fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ],
                   ),
                   SizedBox(
                     width: double.infinity,
