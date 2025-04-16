@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tech_taste/ui/_core/app_colors.dart';
+import 'package:flutter_tech_taste/ui/home/home_screen.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -30,7 +31,7 @@ class SplashScreen extends StatelessWidget {
                         style: TextStyle(
                           color: AppColors.mainColor,
                           fontSize: 22.0,
-                          fontWeight: FontWeight.bold
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                     ],
@@ -38,7 +39,14 @@ class SplashScreen extends StatelessWidget {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(builder: (context) {
+                            return HomeScreen();
+                          }),
+                        );
+                      },
                       child: Text('Bora!'),
                     ),
                   ),
