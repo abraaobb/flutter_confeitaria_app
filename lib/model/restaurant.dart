@@ -1,3 +1,5 @@
+import 'package:flutter_tech_taste/model/dish.dart';
+
 class Restaurant {
   String id;
   String imagePath;
@@ -6,6 +8,7 @@ class Restaurant {
   double stars;
   int distance;
   List<String> categories;
+  List<Dish> dishes;
 
   Restaurant({
     required this.id,
@@ -15,6 +18,7 @@ class Restaurant {
     required this.stars,
     required this.distance,
     required this.categories,
+    required this.dishes,
   });
 
   Map<String, dynamic> toMap() {
@@ -26,6 +30,13 @@ class Restaurant {
       'stars': stars,
       'distance': distance,
       'categories': categories,
+      // NOTE: COM ARROW FUNCTION
+      'dishes': dishes.map((dish) => dish.toMap()).toList(),
+      // NOTE: SEM ARROW FUNCTION
+      // 'dishes':
+      //     dishes.map((dish) {
+      //       return dish.toMap();
+      //     }).toList(),
     };
   }
 
@@ -38,6 +49,7 @@ class Restaurant {
       stars: map['stars'],
       distance: map['distance'],
       categories: List<String>.from(map['categories']),
+      dishes: List<Dish>.from(map['dishes'].map((dish) => Dish.fromMap(dish))),
     );
   }
 
