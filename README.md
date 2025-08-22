@@ -1,6 +1,6 @@
-# Flutter Tech Taste
+# Flutter Confeitaria App
 
-Bem-vindo ao **Flutter Tech Taste**, um projeto criado com Flutter para demonstrar a criação de UI moderna e prática, utilizando conceitos de gerenciamento de estado e design dinâmico. Este README tem como objetivo oferecer uma visão geral do que foi desenvolvido neste projeto, além de listar as principais dependências utilizadas.
+Bem-vindo ao **Flutter Confeitaria App**, um projeto criado com Flutter para demonstrar a criação de UI moderna e prática, utilizando conceitos de gerenciamento de estado e design dinâmico. Este README tem como objetivo oferecer uma visão geral do que foi desenvolvido neste projeto, além de listar as principais dependências utilizadas.
 
 ---
 
@@ -112,4 +112,4 @@ Este projeto é distribuído sob a licença MIT. Sinta-se livre para usá-lo da 
 
 ---
 
-Obrigado por explorar o **Flutter Tech Taste**! Se tiver dúvidas ou sugestões, entre em contato. 😊
+Obrigado por explorar o **Flutter Confeitaria App**! Se tiver dúvidas ou sugestões, entre em contato. 😊
